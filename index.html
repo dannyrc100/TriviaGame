@@ -1,16 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 
+	<div id="trivia-game">
+		<h1>Geography Fun Trivia</h1>
+		<button id="start">Start</button>
 
+		<div id="results">
+			<span id="all-done"></span>
+			<p>Correct Answers: <span id="correctAnswer"></span></p>
+			<p>Incorrect Answers: <span id="incorrectAnswer"></span></p>
+			<p>Unanswered: <span id="no-answer"></span></p>
+		</div>
 
+		<p>Time Remaining: <span id="show-number">60</span> Seconds</p>
 
-
+		<div id="question-container">
+			<div id="question1" class="question row">
+				<div>
+					<h3>What is the largest ocean on planet Earth?</h3>
+				</div>
+				<div class="answer row">
+					<div>
+						<input type="radio" value="1" name="question1">
+						<span class="incorrect">Atlantic Ocean</span>
+					</div>
+					<div>
+						<input type="radio" value="2" name="question1">
+						<span class="incorrect">Indian Ocean</span>
+					</div>
+					<div>
+						<input type="radio" value="3" name="question1">
+						<span class="correct">Pacific Ocean</span>
+					</div>
+					<div>
+						<input type="radio" value="4" name="question1">
+						<span class="incorrect">Artic Ocean</span>
+					</div>
+				</div>
+			</div>
+			<div id="question2" class="question row">
+				<div>
+					<h3>Which is the least populated state in the USA?</h3>
+				</div>
+				<div class="answer row">
+					<div>
+						<input type="radio" value="1" name="question2">
+						<span class="incorrect">South Dakota</span>
+					</div>
+					<div>
+						<input type="radio" value="2" name="question2">
+						<span class="correct">Wyoming</span
+					</div>
+					<div>
+						<input type="radio" value="3" name="question2">
+						<span class="incorrect">Vermont</span>
+					</div>
+					<div>
+						<input type="radio" value="4" name="question2">
+						<span class="incorrect">Hawaii</span>
+					</div>
+				</div>
+			</div>
+			<div id="question3" class="question row">
+				<div>
+					<h3>Which city has the highest population?</h3>
+				</div>
+				<div class="answer row">
+					<div>
+						<input type="radio" value="1" name="question3">
+						<span class="incorrect">Mumbai, India</span>
+					</div>
+					<div>
+						<input type="radio" value="2" name="question3">
+						<span class="incorrect">New York City, USA</span>
+					</div>
+					<div>
+						<input type="radio" value="3" name="question3">
+						<span class="incorrect">Shanghai, China</span>
+					</div>
+					<div>
+						<input type="radio" value="4" name="question3">
+						<span class="correct">Tokyo, Japan</span>
+					</div>
+				</div>
+			</div>
+			<div id="question4" class="question row">
+				<div>
+					<h3>Which is the longest (4,500 miles) continental <br>mountain range in the world?</h3>
+				</div>
+				<div class="answer row">
+					<div>
+						<input type="radio" value="1" name="question4">
+						<span class="incorrect">The Great Escarpment, Africa</span>
+					</div>
+					<div>
+						<input type="radio" value="2" name="question4">
+						<span class="incorrect">The Himalayas, Asia</span>
+					</div>
+					<div>
+						<input type="radio" value="3" name="question4">
+						<span class="correct">The Andes Mountains, South America</span>
+					</div>
+					<div>
+						<input type="radio" value="4" name="question4">
+						<span class="incorrect">The Rocky Mountains, North America</span>
+					</div>
+				</div>
+			</div>
+			<div id="question5" class="question row">
+				<div>
+					<h3>Which countries make up the United Kingdom?</h3>
+				</div>
+				<div class="answer row">
+					<div>
+						<input type="radio" value="1" name="question5">
+						<span class="incorrect">British Virgin Islands, England, Ireland, Scotland</span>
+					</div>
+					<div>
+						<input type="radio" value="2" name="question5">
+						<span class="correct">England, Northern Ireland, Scotland, Wales</span>
+					</div>
+					<div>
+						<input type="radio" value="3" name="question5">
+						<span class="incorrect">British Virgin Islands, England, Ireland, Wales</span>
+					</div>
+					<div>
+						<input type="radio" value="4" name="question5">
+						<span class="incorrect">England, Luxembourg, Scotland, Wales</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 <script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 </html>
